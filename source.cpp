@@ -11,12 +11,15 @@ int main(){
         int x,pos;
         cout<<"input x: ";
         cin>>x;
+        cout<<"input the position: ";
+        cin>>pos;
         NODE* p=creative(x);
         addthefirst(l,p);
         addthelast(l,p);
-        input(l,p);
-        bmi(l,p);
-        reversetime(prev,current);
+        addRandom(l,p,pos,n);
+        delfirst(l);
+        dellast(l);
+        delNoderandom(l, x);
     }
     cout<<"danh sach lien ket: ";
     output(l);
